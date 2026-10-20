@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili Wallpaper Background",
+  "version": "1.0.0",
+  "description": "Replace Bilibili page backgrounds with your own image or animated wallpaper.",
+  "author": "Sinmeowsama",
+  "permissions": ["storage", "unlimitedStorage"],
+  "action": {
+    "default_title": "Bilibili Wallpaper",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

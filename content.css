@@ -1,0 +1,35 @@
+html.bwp-enabled,
+html.bwp-enabled body,
+html.bwp-enabled #app,
+html.bwp-enabled .bili-feed4,
+html.bwp-enabled .home-container {
+  background-color: transparent !important;
+}
+
+#bwp-wallpaper-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -2147483000 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+#bwp-wallpaper-overlay .bwp-wallpaper-media {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 0 !important;
+  opacity: 0.72 !important;
+  filter: none !important;
+}
+
+#bwp-wallpaper-overlay .bwp-tint {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0) !important;
+}

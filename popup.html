@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bilibili Wallpaper</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SINMEOWSAMA</p>
+          <h1>Bilibili Wallpaper</h1>
+        </div>
+        <label class="switch" title="启用或停用壁纸">
+          <input id="enabled" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </header>
+
+      <section class="preview" aria-label="壁纸预览">
+        <div id="preview-media"></div>
+        <div class="preview-shade"></div>
+        <span id="preview-empty">还没有选择壁纸</span>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><span>壁纸来源</span><span id="source-status">未设置</span></div>
+        <div class="source-buttons">
+          <button id="image-button" class="button primary" type="button">上传图片</button>
+          <button id="video-button" class="button" type="button">上传视频</button>
+          <input id="image-file" type="file" accept="image/*" hidden>
+          <input id="video-file" type="file" accept="video/*" hidden>
+        </div>
+        <div class="url-row">
+          <input id="source-url" type="url" placeholder="或粘贴图片 / 视频 URL">
+          <button id="apply-url" class="button compact" type="button">应用</button>
+        </div>
+        <p class="hint">本地文件会保存在浏览器本地，不会上传到服务器。</p>
+      </section>
+
+      <section class="section controls">
+        <div class="section-title"><span>显示设置</span></div>
+        <label class="control-row"><span>透明度</span><input id="opacity" type="range" min="0.1" max="1" step="0.01"><output id="opacity-value"></output></label>
+        <label class="control-row"><span>模糊</span><input id="blur" type="range" min="0" max="20" step="1"><output id="blur-value"></output></label>
+        <label class="control-row"><span>暗色遮罩</span><input id="tint" type="range" min="0" max="0.8" step="0.01"><output id="tint-value"></output></label>
+        <div class="select-row">
+          <label>填充方式<select id="fit"><option value="cover">覆盖</option><option value="contain">完整</option><option value="fill">拉伸</option></select></label>
+          <label>位置<select id="position"><option value="center">居中</option><option value="top">顶部</option><option value="bottom">底部</option><option value="left">左侧</option><option value="right">右侧</option></select></label>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button id="reset" class="text-button" type="button">清除壁纸</button>
+        <span id="message" role="status"></span>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
