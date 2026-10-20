@@ -7,7 +7,7 @@
 - 支持 Bilibili 全站页面背景替换
 - 支持图片、GIF 图片、MP4/WebM/Ogg 视频动态壁纸
 - 支持本地文件上传和远程图片/视频 URL
-- 浏览器内 GUI：启用开关、透明度、模糊、暗色遮罩、填充方式和位置
+- 浏览器内 GUI：启用开关、透明度、模糊、暗色遮罩、缩放、亮度、对比度、饱和度、X/Y 偏移、填充方式和位置
 - 设置保存在浏览器本地，不上传到第三方服务器
 
 ## 安装 / Installation
@@ -26,9 +26,9 @@
 
 ## 使用 / Usage
 
-上传图片或视频后，打开右上角开关即可启用。也可以粘贴 `http(s)` 图片或视频地址并点击“应用”。视频文件会自动循环播放、静音播放。
+上传图片或视频后，打开右上角开关即可启用。也可以粘贴 `http(s)` 图片或视频地址并点击“应用”。视频文件会自动循环播放、静音播放。X/Y 偏移范围为 -500 至 +500 像素；缩放、亮度、对比度和饱和度可独立调整。
 
-Upload an image or video, then turn on the switch. You can also paste an `http(s)` image or video URL and click **Apply**. Videos loop automatically and play muted.
+Upload an image or video, then turn on the switch. You can also paste an `http(s)` image or video URL and click **Apply**. Videos loop automatically and play muted. X/Y offsets range from -500 to +500 pixels; zoom, brightness, contrast, and saturation can be adjusted independently.
 
 本地文件大小限制为 8 MB，这是为了适配浏览器扩展本地存储配额。/ Local files are limited to 8 MB to fit browser extension storage quotas.
 

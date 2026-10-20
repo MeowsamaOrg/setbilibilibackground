@@ -1,6 +1,6 @@
 :root { color-scheme: dark; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
 * { box-sizing: border-box; }
-body { margin: 0; width: 360px; color: #f5f7fb; background: #101318; }
+body { margin: 0; width: 360px; max-height: 700px; overflow-y: auto; color: #f5f7fb; background: #101318; }
 .panel { padding: 18px; background: linear-gradient(145deg, #161b24, #0f1116 65%); }
 .topbar, .section-title, .footer, .control-row, .select-row, .url-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .eyebrow { margin: 0 0 4px; color: #8b95a7; font-size: 10px; letter-spacing: 1.8px; }

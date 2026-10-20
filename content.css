@@ -21,15 +21,11 @@ html.bwp-enabled .home-container {
   width: 100% !important;
   height: 100% !important;
   display: block !important;
-  object-fit: cover !important;
-  object-position: center !important;
   border: 0 !important;
-  opacity: 0.72 !important;
-  filter: none !important;
+  transform-origin: center center;
 }
 
 #bwp-wallpaper-overlay .bwp-tint {
   position: absolute !important;
   inset: 0 !important;
-  background: rgba(0, 0, 0, 0) !important;
 }
